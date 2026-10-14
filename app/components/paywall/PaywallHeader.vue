@@ -26,7 +26,7 @@ const emit = defineEmits<{
     <!-- Center Badge -->
     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-kid-yellow-light border border-kid-yellow/40">
       <Sparkles class="w-3.5 h-3.5 text-amber-600 fill-amber-500 animate-pulse-gentle" />
-      <span class="text-xs font-black tracking-wider text-amber-800 uppercase">Premium Pass</span>
+      <span class="text-xs font-black tracking-wide text-amber-800 uppercase">Полный доступ</span>
     </div>
 
     <!-- Dev / Demo toggle for testing error state -->

@@ -48,7 +48,7 @@ const emit = defineEmits<{
         </p>
 
         <!-- Purchase details ticket -->
-        <div v-if="purchase" class="bg-slate-50 border border-slate-200/80 rounded-2xl p-3.5 mb-5 text-left text-xs space-y-1.5">
+        <div v-if="purchase" class="bg-slate-50 border border-slate-200/80 rounded-2xl p-4 mb-5 text-left text-xs space-y-2">
           <div class="flex justify-between items-center text-slate-500">
             <span>Тариф:</span>
             <span class="font-bold text-slate-800">
@@ -56,22 +56,18 @@ const emit = defineEmits<{
             </span>
           </div>
           <div class="flex justify-between items-center text-slate-500">
+            <span>Номер заказа:</span>
+            <span class="font-mono font-bold text-slate-700">№ {{ purchase.id }}</span>
+          </div>
+          <div class="flex justify-between items-center text-slate-500">
             <span>Сумма:</span>
             <span class="font-bold text-slate-800">{{ purchase.price }} {{ purchase.currency }}</span>
           </div>
           <div class="flex justify-between items-center text-slate-500">
-            <span>ID заказа:</span>
-            <span class="font-mono text-[11px] text-slate-600">#{{ purchase.id }}</span>
-          </div>
-          <div class="flex justify-between items-center text-slate-500">
-            <span>Устройство:</span>
-            <span class="font-mono text-[10px] text-slate-600 truncate max-w-[170px]">{{ purchase.device_id }}</span>
-          </div>
-          <div class="flex justify-between items-center text-slate-500">
-            <span>Статус:</span>
-            <span class="inline-flex items-center gap-1 font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded text-[10px]">
+            <span>Подписка:</span>
+            <span class="inline-flex items-center gap-1 font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded text-[11px]">
               <Sparkles class="w-3 h-3" />
-              {{ purchase.status === 'completed' ? 'Успешно сохранено в БД' : purchase.status }}
+              Активирована
             </span>
           </div>
         </div>

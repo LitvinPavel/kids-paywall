@@ -9,7 +9,7 @@
   }
 
   body {
-    @apply bg-slate-100 text-kid-dark antialiased selection:bg-kid-yellow-light selection:text-kid-purple-dark;
+    @apply bg-white text-kid-dark antialiased selection:bg-kid-yellow-light selection:text-kid-purple-dark;
     overscroll-behavior-y: none;
   }
 }

@@ -62,7 +62,7 @@ const handleLegal = (type: 'terms' | 'privacy') => {
 
 <template>
   <DeviceFrame>
-    <main class="flex-1 flex flex-col justify-between bg-gradient-to-b from-purple-50/70 via-white to-slate-50 relative pb-2">
+    <main class="flex-1 min-h-full flex flex-col justify-between bg-gradient-to-b from-purple-50/70 via-white to-slate-50 relative pb-2">
       <!-- Top Section -->
       <div>
         <PaywallHeader

@@ -17,7 +17,7 @@ if (import.meta.client) {
 </script>
 
 <template>
-  <div class="min-h-screen bg-slate-900/90 text-slate-800 flex flex-col items-center justify-center p-0 md:p-6 transition-colors selection:bg-indigo-100">
+  <div class="min-h-screen min-h-[100dvh] bg-white md:bg-slate-900/90 text-slate-800 flex flex-col items-center md:justify-center p-0 md:p-6 transition-colors selection:bg-indigo-100">
     <!-- Desktop Mode Switcher Bar -->
     <div class="hidden md:flex items-center gap-2 mb-4 bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20 text-white text-xs select-none">
       <span class="text-white/70 font-semibold mr-1">Предпросмотр:</span>
@@ -43,11 +43,11 @@ if (import.meta.client) {
 
     <!-- Phone Frame Container -->
     <div
-      class="w-full transition-all duration-300 relative"
+      class="w-full flex-1 md:flex-initial min-h-screen min-h-[100dvh] md:min-h-0 flex flex-col bg-white transition-all duration-300 relative"
       :class="[
         isFrameEnabled
-          ? 'md:max-w-[390px] md:h-[844px] md:rounded-[48px] md:ring-[12px] md:ring-slate-800 md:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] md:border-4 md:border-slate-700/60 overflow-hidden bg-slate-50 flex flex-col'
-          : 'max-w-md min-h-screen bg-slate-50 flex flex-col shadow-2xl'
+          ? 'md:max-w-[390px] md:h-[844px] md:rounded-[48px] md:ring-[12px] md:ring-slate-800 md:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] md:border-4 md:border-slate-700/60 md:overflow-hidden'
+          : 'max-w-md shadow-2xl'
       ]"
     >
       <!-- Simulated iOS Status Bar (visible inside phone frame) -->

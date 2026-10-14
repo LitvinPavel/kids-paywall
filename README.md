@@ -6,7 +6,9 @@
 
 ---
 
-## 🎨 Ссылка на Figma-макет
+## 🔗 Ссылки проекта
+- **GitHub-репозиторий:**  
+  👉 **[https://github.com/LitvinPavel/kids-paywall](https://github.com/LitvinPavel/kids-paywall)**
 - **Макет экрана в Figma (с правом просмотра):**  
   👉 **[https://www.figma.com/design/vjFFG5WTF8R3PHl8k7xkwQ/kids-paywall?node-id=0-1&m=dev&t=Mz6p5c1qzjJmAjN8-1](https://www.figma.com/design/vjFFG5WTF8R3PHl8k7xkwQ/kids-paywall?node-id=0-1&m=dev&t=Mz6p5c1qzjJmAjN8-1)**
 

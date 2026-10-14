@@ -7,7 +7,11 @@ export function getDb(): Client {
     return clientInstance
   }
 
-  const url = process.env.DATABASE_URL || 'file:paywall.db'
+  // If cloud DATABASE_URL is provided, use it (e.g. Turso libsql://...)
+  // In serverless environments (Vercel/Netlify), fallback to writable /tmp directory
+  const isServerless = Boolean(process.env.VERCEL || process.env.NETLIFY || process.env.AWS_LAMBDA_FUNCTION_NAME)
+  const defaultLocalDb = isServerless ? 'file:/tmp/paywall.db' : 'file:paywall.db'
+  const url = process.env.DATABASE_URL || defaultLocalDb
   const authToken = process.env.DATABASE_AUTH_TOKEN
 
   clientInstance = createClient({

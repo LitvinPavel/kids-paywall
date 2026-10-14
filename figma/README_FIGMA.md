@@ -6,8 +6,8 @@
 
 ## 1. Файлы макета в репозитории
 
-1. [`paywall_design.svg`](file:///Users/pavellitvin/.gemini/antigravity/scratch/kids-paywall-nuxt/figma/paywall_design.svg) — готовый векторный макет экрана (390 × 844 px, iPhone 14/15/16). Содержит все слои, группы, типографику, иконки, бейджи и градиенты.
-2. [`design_tokens.json`](file:///Users/pavellitvin/.gemini/antigravity/scratch/kids-paywall-nuxt/figma/design_tokens.json) — спецификация дизайн-токенов (цвета, шрифты, отступы, тени, радиусы).
+1. [`paywall_design.svg`](file:///Users/pavellitvin/Desktop/test_tasks/kids-paywall-nuxt/figma/paywall_design.svg) — готовый векторный макет экрана (390 × 844 px, iPhone 14/15/16). Содержит все слои, группы, типографику, иконки, бейджи и градиенты.
+2. [`design_tokens.json`](file:///Users/pavellitvin/Desktop/test_tasks/kids-paywall-nuxt/figma/design_tokens.json) — спецификация дизайн-токенов (цвета, шрифты, отступы, тени, радиусы).
 
 ---
 

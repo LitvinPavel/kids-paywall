@@ -324,5 +324,5 @@ const svgTemplate = `<?xml version="1.0" encoding="UTF-8"?>
 </svg>
 `
 
-fs.writeFileSync('/Users/pavellitvin/Desktop/test_tasks/kids-paywall-nuxt/figma/paywall_design.svg', svgTemplate)
+fs.writeFileSync(new URL('../figma/paywall_design.svg', import.meta.url), svgTemplate)
 console.log('Successfully generated pixel-perfect paywall_design.svg exactly matching the web app!')

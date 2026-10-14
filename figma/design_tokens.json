@@ -1,0 +1,58 @@
+{
+  "name": "AmayaSoft Kids Paywall Design System Tokens",
+  "screen": {
+    "viewport": { "width": 390, "height": 844, "ratio": "19.5:9", "device": "iPhone 14 / 15 / 16" },
+    "safeArea": { "top": 44, "bottom": 34, "horizontal": 20 }
+  },
+  "colors": {
+    "brand": {
+      "purple": "#6C5CE7",
+      "purpleDark": "#4F46E5",
+      "purpleLight": "#EEF2FF",
+      "purpleGradient": "linear-gradient(135deg, #6C5CE7 0%, #4F46E5 100%)"
+    },
+    "accent": {
+      "green": "#10B981",
+      "greenDark": "#059669",
+      "greenLight": "#ECFDF5",
+      "ctaGradient": "linear-gradient(90deg, #10B981 0%, #14B8A6 50%, #22C55E 100%)",
+      "yellow": "#FFC048",
+      "yellowDark": "#D97706",
+      "yellowLight": "#FFF5D9",
+      "pink": "#FF6B8B"
+    },
+    "neutral": {
+      "background": "#F8FAFC",
+      "surface": "#FFFFFF",
+      "textPrimary": "#0F172A",
+      "textSecondary": "#475569",
+      "textMuted": "#94A3B8",
+      "border": "#E2E8F0",
+      "borderSelected": "#6C5CE7"
+    }
+  },
+  "typography": {
+    "fontFamily": "Nunito, system-ui, -apple-system, sans-serif",
+    "sizes": {
+      "headline": { "fontSize": 24, "lineHeight": 28, "fontWeight": 900 },
+      "subheadline": { "fontSize": 12, "lineHeight": 17, "fontWeight": 600 },
+      "cardTitle": { "fontSize": 15, "lineHeight": 20, "fontWeight": 900 },
+      "price": { "fontSize": 16, "lineHeight": 20, "fontWeight": 900 },
+      "cta": { "fontSize": 16, "lineHeight": 22, "fontWeight": 900 },
+      "badge": { "fontSize": 10, "lineHeight": 12, "fontWeight": 900 },
+      "caption": { "fontSize": 10.5, "lineHeight": 14, "fontWeight": 600 }
+    }
+  },
+  "radii": {
+    "badge": 9999,
+    "card": 20,
+    "cta": 20,
+    "iconButton": 18,
+    "featureCard": 16
+  },
+  "shadows": {
+    "cardSelected": "0 8px 24px -4px rgba(108, 92, 231, 0.25)",
+    "ctaGlow": "0 8px 20px -2px rgba(16, 185, 129, 0.35)",
+    "modal": "0 25px 50px -12px rgba(15, 23, 42, 0.25)"
+  }
+}

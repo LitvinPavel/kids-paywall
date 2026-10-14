@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844" style="background:#F8FAFC; font-family:'Nunito', system-ui, -apple-system, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F3F0FF" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+
+    <linearGradient id="ctaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="50%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+
+    <linearGradient id="selectedCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EEF2FF"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F3FF"/>
+    </linearGradient>
+
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6C5CE7"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+
+    <linearGradient id="mascotGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C5CE7" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#FFC048" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FF6B8B" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Filters & Shadows -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#6C5CE7" flood-opacity="0.2"/>
+    </filter>
+
+    <filter id="ctaShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#10B981" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="390" height="844" fill="url(#bgGrad)"/>
+
+  <!-- ================= 1. STATUS BAR ================= -->
+  <g id="StatusBar" transform="translate(24, 14)">
+    <text x="0" y="12" fill="#0F172A" font-size="14" font-weight="800">09:41</text>
+    <!-- Dynamic Island Pill -->
+    <rect x="110" y="-4" width="94" height="26" rx="13" fill="#000000"/>
+    <!-- Icons (Signal, Wifi, Battery) -->
+    <g transform="translate(295, 0)" fill="#0F172A">
+      <!-- Signal -->
+      <rect x="0" y="8" width="3" height="4" rx="0.5"/>
+      <rect x="4" y="6" width="3" height="6" rx="0.5"/>
+      <rect x="8" y="3" width="3" height="9" rx="0.5"/>
+      <rect x="12" y="0" width="3" height="12" rx="0.5"/>
+      <!-- Wifi -->
+      <path d="M22 2 C 25 0, 29 0, 32 2 M 24 5 C 26 3.5, 28 3.5, 30 5 M 26 9 A 1.5 1.5 0 1 1 28 9" stroke="#0F172A" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <!-- Battery -->
+      <rect x="38" y="1" width="20" height="11" rx="3" fill="none" stroke="#0F172A" stroke-width="1.5"/>
+      <rect x="40" y="3" width="13" height="7" rx="1.5" fill="#0F172A"/>
+      <path d="M59 4.5 Q 60 4.5 60 5.5 L 60 7.5 Q 60 8.5 59 8.5" fill="#0F172A"/>
+    </g>
+  </g>
+
+  <!-- ================= 2. HEADER ================= -->
+  <g id="Header" transform="translate(20, 52)">
+    <!-- Close Button -->
+    <circle cx="18" cy="18" r="18" fill="#F1F5F9"/>
+    <path d="M13 13 L23 23 M23 13 L13 23" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Premium Pass Badge -->
+    <g transform="translate(115, 4)">
+      <rect x="0" y="0" width="120" height="28" rx="14" fill="#FFF5D9" stroke="#FFC048" stroke-width="1" stroke-opacity="0.5"/>
+      <path d="M14 14 L16 9 L18 14 L23 16 L18 18 L16 23 L14 18 L9 16 Z" fill="#D97706"/>
+      <text x="28" y="18" fill="#92400E" font-size="11" font-weight="900" letter-spacing="0.5">PREMIUM PASS</text>
+    </g>
+  </g>
+
+  <!-- ================= 3. HERO & MASCOT ================= -->
+  <g id="Hero" transform="translate(195, 110)">
+    <!-- Mascot Glow -->
+    <circle cx="0" cy="50" r="55" fill="url(#mascotGlow)"/>
+
+    <!-- Mascot Illustration -->
+    <g transform="translate(-50, 0)">
+      <!-- Wand Trail -->
+      <path d="M-15 45 Q 10 15 45 25" stroke="#FFC048" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 6" opacity="0.8"/>
+      <!-- Ears -->
+      <circle cx="20" cy="30" r="14" fill="#F39C12"/>
+      <circle cx="20" cy="30" r="8" fill="#FAD7A0"/>
+      <circle cx="80" cy="30" r="14" fill="#F39C12"/>
+      <circle cx="80" cy="30" r="8" fill="#FAD7A0"/>
+      <!-- Head -->
+      <circle cx="50" cy="52" r="34" fill="#F5B041"/>
+      <!-- Cheeks -->
+      <ellipse cx="32" cy="62" rx="6" ry="3.5" fill="#FF7675" opacity="0.6"/>
+      <ellipse cx="68" cy="62" rx="6" ry="3.5" fill="#FF7675" opacity="0.6"/>
+      <!-- Eyes -->
+      <ellipse cx="38" cy="50" rx="3.5" ry="5" fill="#2C3E50"/>
+      <circle cx="39" cy="48" r="1.5" fill="#FFFFFF"/>
+      <ellipse cx="62" cy="50" rx="3.5" ry="5" fill="#2C3E50"/>
+      <circle cx="63" cy="48" r="1.5" fill="#FFFFFF"/>
+      <!-- Snout -->
+      <ellipse cx="50" cy="60" rx="12" ry="9" fill="#FDEBD0"/>
+      <ellipse cx="50" cy="56" rx="4.5" ry="3" fill="#2C3E50"/>
+      <path d="M47 59 Q 50 62 53 59" stroke="#2C3E50" stroke-width="2" stroke-linecap="round"/>
+      <!-- Golden Crown -->
+      <path d="M35 15 L42 2 L50 10 L58 2 L65 15 Z" fill="#F1C40F" stroke="#D4AC0D" stroke-width="1.5"/>
+      <circle cx="42" cy="2" r="2" fill="#E74C3C"/>
+      <circle cx="50" cy="10" r="2" fill="#3498DB"/>
+      <circle cx="58" cy="2" r="2" fill="#2ECC71"/>
+    </g>
+
+    <!-- Star Accent -->
+    <g transform="translate(42, 10) rotate(15)">
+      <polygon points="12,0 15,8 24,10 18,16 20,24 12,20 4,24 6,16 0,10 9,8" fill="#FFC048"/>
+    </g>
+
+    <!-- Headline -->
+    <text x="0" y="125" text-anchor="middle" fill="#0F172A" font-size="24" font-weight="900" letter-spacing="-0.5">
+      Открой все игры!
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="148" text-anchor="middle" fill="#475569" font-size="12" font-weight="600">
+      500+ развивающих заданий, логических игр
+    </text>
+    <text x="0" y="165" text-anchor="middle" fill="#475569" font-size="12" font-weight="600">
+      и пазлов для детей без рекламы
+    </text>
+  </g>
+
+  <!-- ================= 4. VALUE PERKS ================= -->
+  <g id="Features" transform="translate(20, 298)">
+    <!-- Perk 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="350" height="46" rx="16" fill="#FFFFFF" fill-opacity="0.85" stroke="#E2E8F0" stroke-width="1"/>
+      <rect x="8" y="7" width="32" height="32" rx="10" fill="#EEF2FF"/>
+      <!-- Gamepad icon -->
+      <path d="M18 20 L22 20 M20 18 L20 22 M27 20 A 1 1 0 1 1 29 20" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
+      <text x="50" y="21" fill="#1E293B" font-size="12" font-weight="800">Все 500+ развивающих игр</text>
+      <text x="50" y="34" fill="#64748B" font-size="10.5" font-weight="600">Пазлы, математика, логика, рисование и слова</text>
+    </g>
+
+    <!-- Perk 2 -->
+    <g transform="translate(0, 52)">
+      <rect width="350" height="46" rx="16" fill="#FFFFFF" fill-opacity="0.85" stroke="#E2E8F0" stroke-width="1"/>
+      <rect x="8" y="7" width="32" height="32" rx="10" fill="#ECFDF5"/>
+      <!-- Shield icon -->
+      <path d="M24 16 L18 19 L18 25 C 18 28 24 31 24 31 C 24 31 30 28 30 25 L30 19 Z" stroke="#059669" stroke-width="1.8" fill="none"/>
+      <text x="50" y="21" fill="#1E293B" font-size="12" font-weight="800">100% безопасная среда</text>
+      <text x="50" y="34" fill="#64748B" font-size="10.5" font-weight="600">Никакой рекламы и случайных кликов малыша</text>
+    </g>
+
+    <!-- Perk 3 -->
+    <g transform="translate(0, 104)">
+      <rect width="350" height="46" rx="16" fill="#FFFFFF" fill-opacity="0.85" stroke="#E2E8F0" stroke-width="1"/>
+      <rect x="8" y="7" width="32" height="32" rx="10" fill="#FEF3C7"/>
+      <!-- Wifi Off icon -->
+      <path d="M19 19 C 22 17 26 17 29 19 M 17 17 L 31 31" stroke="#D97706" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="50" y="21" fill="#1E293B" font-size="12" font-weight="800">Работает без интернета</text>
+      <text x="50" y="34" fill="#64748B" font-size="10.5" font-weight="600">Идеально в дорогу, в машине, поезде и самолёте</text>
+    </g>
+  </g>
+
+  <!-- ================= 5. TARIFF CARDS ================= -->
+  <!-- CARD 1: ANNUAL (SELECTED) -->
+  <g id="CardAnnualSelected" transform="translate(20, 468)" filter="url(#cardShadow)">
+    <rect width="350" height="74" rx="20" fill="url(#selectedCardGrad)" stroke="#6C5CE7" stroke-width="2.5"/>
+
+    <!-- Discount Badge -->
+    <g transform="translate(235, -11)">
+      <rect width="98" height="22" rx="11" fill="url(#badgeGrad)"/>
+      <path d="M10 11 L12 7 L14 11 L18 12 L14 13 L12 17 L10 13 L6 12 Z" fill="#FFC048"/>
+      <text x="22" y="15" fill="#FFFFFF" font-size="10" font-weight="900" letter-spacing="0.5">ВЫГОДА 65%</text>
+    </g>
+
+    <!-- Radio Indicator (Checked) -->
+    <circle cx="28" cy="37" r="12" fill="#6C5CE7"/>
+    <path d="M22 37 L26 41 L34 33" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Card Title & Trial Tag -->
+    <text x="50" y="33" fill="#0F172A" font-size="15" font-weight="900">Годовой доступ</text>
+    <rect x="50" y="42" width="102" height="18" rx="4" fill="#ECFDF5"/>
+    <text x="56" y="55" fill="#059669" font-size="10.5" font-weight="800">3 дня бесплатно</text>
+
+    <!-- Pricing Right -->
+    <text x="334" y="34" text-anchor="end" fill="#0F172A" font-size="16" font-weight="900">1 990 ₽ / год</text>
+    <text x="334" y="52" text-anchor="end" fill="#6C5CE7" font-size="11" font-weight="800">всего 165 ₽ / мес</text>
+  </g>
+
+  <!-- CARD 2: MONTHLY (UNSELECTED) -->
+  <g id="CardMonthlyUnselected" transform="translate(20, 554)">
+    <rect width="350" height="64" rx="20" fill="#FFFFFF" fill-opacity="0.95" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <!-- Radio Indicator (Unchecked) -->
+    <circle cx="28" cy="32" r="11" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Card Title & Subtitle -->
+    <text x="50" y="29" fill="#0F172A" font-size="15" font-weight="800">Месячный доступ</text>
+    <text x="50" y="46" fill="#64748B" font-size="11" font-weight="600">Без обязательств</text>
+
+    <!-- Pricing Right -->
+    <text x="334" y="30" text-anchor="end" fill="#0F172A" font-size="16" font-weight="800">499 ₽ / мес</text>
+    <text x="334" y="46" text-anchor="end" fill="#94A3B8" font-size="11" font-weight="600">ежемесячно</text>
+  </g>
+
+  <!-- ================= 6. CTA BUTTON ================= -->
+  <g id="CTAButton" transform="translate(20, 634)" filter="url(#ctaShadow)">
+    <rect width="350" height="56" rx="20" fill="url(#ctaGrad)"/>
+    <!-- Button Label -->
+    <text x="165" y="34" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="900" letter-spacing="-0.2">
+      Попробовать 3 дня бесплатно
+    </text>
+    <!-- Arrow Icon -->
+    <path d="M305 28 L311 34 L305 40" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- CTA Subtext Reassurance -->
+  <text x="195" y="704" text-anchor="middle" fill="#64748B" font-size="10.5" font-weight="600">
+    Затем 1 990 ₽/год (~165 ₽/мес). Отмена в любой момент в 1 клик
+  </text>
+
+  <!-- ================= 7. FOOTER ================= -->
+  <g id="Footer" transform="translate(195, 736)">
+    <!-- Restore Purchases Link -->
+    <text x="0" y="0" text-anchor="middle" fill="#6C5CE7" font-size="12" font-weight="800" text-decoration="none">
+      Восстановить покупки
+    </text>
+
+    <!-- Legal Links -->
+    <text x="0" y="20" text-anchor="middle" fill="#94A3B8" font-size="10" font-weight="600">
+      Условия использования   •   Конфиденциальность
+    </text>
+  </g>
+
+  <!-- Home Indicator (Bottom Bar) -->
+  <rect x="131" y="828" width="128" height="4" rx="2" fill="#CBD5E1"/>
+</svg>

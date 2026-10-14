@@ -1,0 +1,29 @@
+{
+  "name": "kids-paywall-nuxt",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "canvas-confetti": "^1.9.4",
+    "lucide-vue-next": "^0.475.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.13.1",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/node": "^22.13.4",
+    "nuxt": "^3.15.4",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vue-tsc": "^2.2.0"
+  }
+}

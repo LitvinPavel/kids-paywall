@@ -1,0 +1,19 @@
+# Nuxt build artifacts
+.nuxt
+.output
+.nitro
+dist
+
+# Dependencies
+node_modules
+
+# Environment & local files
+.env
+*.local
+paywall.db
+paywall.db-journal
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

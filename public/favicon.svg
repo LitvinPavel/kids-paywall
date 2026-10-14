@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <!-- Background squircle gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9EE" />
+      <stop offset="100%" stop-color="#FFE5A3" />
+    </linearGradient>
+    <linearGradient id="bearGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8B84E" />
+      <stop offset="100%" stop-color="#EB9816" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#5A3A00" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- App Icon Squircle Background -->
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#bgGrad)" stroke="#F5C04A" stroke-width="3" />
+
+  <!-- Bear Character Group -->
+  <g id="mascot" filter="url(#shadow)">
+    <!-- Ears -->
+    <circle cx="36" cy="42" r="16" fill="#E67E22" />
+    <circle cx="36" cy="42" r="9" fill="#FAD7A0" />
+    <circle cx="92" cy="42" r="16" fill="#E67E22" />
+    <circle cx="92" cy="42" r="9" fill="#FAD7A0" />
+
+    <!-- Head -->
+    <circle cx="64" cy="68" r="40" fill="url(#bearGrad)" />
+
+    <!-- Cheeks -->
+    <ellipse cx="42" cy="80" rx="8" ry="5" fill="#FF7675" opacity="0.6" />
+    <ellipse cx="86" cy="80" rx="8" ry="5" fill="#FF7675" opacity="0.6" />
+
+    <!-- Snout Background -->
+    <ellipse cx="64" cy="78" rx="17" ry="13" fill="#FFF3DF" />
+
+    <!-- Cute Nose -->
+    <ellipse cx="64" cy="72" rx="6" ry="4" fill="#2C3E50" />
+    <!-- Smile -->
+    <path d="M59 77 Q64 82 69 77" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+    <!-- Big Sparkly Eyes -->
+    <ellipse cx="49" cy="63" rx="5" ry="6.5" fill="#2C3E50" />
+    <circle cx="51" cy="60.5" r="2.2" fill="#FFFFFF" />
+    <ellipse cx="79" cy="63" rx="5" ry="6.5" fill="#2C3E50" />
+    <circle cx="81" cy="60.5" r="2.2" fill="#FFFFFF" />
+
+    <!-- Golden Crown on Bear's Head -->
+    <g transform="translate(46, 16)">
+      <path d="M0 18 L7 4 L18 13 L29 4 L36 18 Z" fill="#F1C40F" stroke="#D4AC0D" stroke-width="2" stroke-linejoin="round" />
+      <circle cx="7" cy="4" r="3" fill="#E74C3C" />
+      <circle cx="18" cy="13" r="3" fill="#3498DB" />
+      <circle cx="29" cy="4" r="3" fill="#2ECC71" />
+    </g>
+
+    <!-- Sparkle accent top right -->
+    <g transform="translate(100, 16) scale(0.9)">
+      <path d="M7 0 L9 5 L14 7 L9 9 L7 14 L5 9 L0 7 L5 5 Z" fill="#F39C12" />
+    </g>
+  </g>
+</svg>

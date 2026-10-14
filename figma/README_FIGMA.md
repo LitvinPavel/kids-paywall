@@ -11,14 +11,10 @@
 
 ---
 
-## 2. Как получить ссылку на макет в Figma (1 минута)
+## 2. Публичная ссылка на макет в Figma
 
-1. Откройте **[figma.com](https://figma.com)** и войдите в свой аккаунт.
-2. Создайте новый файл (**New design file**) или откройте черновик.
-3. Перетащите файл `paywall_design.svg` из папки `figma/` прямо на холст Figma (Drag & Drop), либо выберите в меню: **File → Place image...** и выберите `paywall_design.svg`.
-4. Figma импортирует полноценный фрейм `390 × 844` со всеми векторными слоями, текстами и стилями.
-5. В правом верхнем углу нажмите **Share** → переключите доступ на **«Anyone with the link can view»** → нажмите **Copy link**.
-6. Вставьте полученную ссылку в отчет / резюме тестового задания.
+🎨 **Ссылка на макет в Figma (доступен для просмотра):**
+👉 **[https://www.figma.com/design/vjFFG5WTF8R3PHl8k7xkwQ/kids-paywall?node-id=0-1&m=dev&t=Mz6p5c1qzjJmAjN8-1](https://www.figma.com/design/vjFFG5WTF8R3PHl8k7xkwQ/kids-paywall?node-id=0-1&m=dev&t=Mz6p5c1qzjJmAjN8-1)**
 
 ---
 

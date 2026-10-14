@@ -6,6 +6,12 @@
 
 ---
 
+## 🎨 Ссылка на Figma-макет
+- **Макет экрана в Figma (с правом просмотра):**  
+  👉 **[https://www.figma.com/design/vjFFG5WTF8R3PHl8k7xkwQ/kids-paywall?node-id=0-1&m=dev&t=Mz6p5c1qzjJmAjN8-1](https://www.figma.com/design/vjFFG5WTF8R3PHl8k7xkwQ/kids-paywall?node-id=0-1&m=dev&t=Mz6p5c1qzjJmAjN8-1)**
+
+---
+
 ## 🚀 1. Как запустить проект локально
 
 ### Предварительные требования
@@ -75,7 +81,7 @@ kids-paywall-nuxt/
 ├── figma/
 │   ├── paywall_design.svg           # Полный векторный макет экрана (390×844) для Figma
 │   ├── design_tokens.json           # Токены дизайн-системы (цвета, шрифты, отступы)
-│   └── README_FIGMA.md              # Инструкция по импорту в Figma и получению ссылки
+│   └── README_FIGMA.md              # Обоснование дизайн-решений и спецификация токенов
 ├── nuxt.config.ts                   # Конфигурация Nuxt 4, Tailwind и мета-тегов
 └── tailwind.config.ts               # Детская палитра, анимации и тени
 ```

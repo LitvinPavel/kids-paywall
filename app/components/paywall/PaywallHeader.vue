@@ -29,12 +29,12 @@ const emit = defineEmits<{
       <span class="text-xs font-black tracking-wide text-amber-800 uppercase">Полный доступ</span>
     </div>
 
-    <!-- Dev / Demo toggle for testing error state -->
+    <!-- Toggle for testing error state -->
     <button
       type="button"
       class="w-9 h-9 rounded-full flex items-center justify-center transition-colors focus:outline-none"
       :class="simulateError ? 'bg-rose-100 text-rose-600 ring-2 ring-rose-400' : 'bg-black/5 text-gray-400 hover:text-gray-600'"
-      title="Тест состояния ошибки (Dev Mode)"
+      title="Проверить состояние ошибки"
       @click="emit('toggleErrorSim')"
     >
       <Bug class="w-4 h-4" />

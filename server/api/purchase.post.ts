@@ -20,7 +20,7 @@ export default defineEventHandler(async (event): Promise<PurchaseResponse> => {
   if (body.offerId === 'simulate_error') {
     throw createError({
       statusCode: 402,
-      statusMessage: 'Тестовая ошибка оплаты: недостаточно средств на карте',
+      statusMessage: 'Ошибка оплаты: недостаточно средств на карте',
     })
   }
 

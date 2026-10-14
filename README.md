@@ -6,10 +6,10 @@
 
 ---
 
-## 🔗 Ссылки проекта (для сдачи тестового задания)
+## 🔗 Ссылки проекта
 - **Живой задеплоенный сервис:**  
   👉 **[https://kids-paywall-eight.vercel.app/](https://kids-paywall-eight.vercel.app/)**
-- **Макет экрана в Figma (с правом просмотра):**  
+- **Макет экрана в Figma (режим просмотра):**  
   👉 **[https://www.figma.com/design/vjFFG5WTF8R3PHl8k7xkwQ/kids-paywall?node-id=0-1&m=dev&t=Mz6p5c1qzjJmAjN8-1](https://www.figma.com/design/vjFFG5WTF8R3PHl8k7xkwQ/kids-paywall?node-id=0-1&m=dev&t=Mz6p5c1qzjJmAjN8-1)**
 - **GitHub-репозиторий:**  
   👉 **[https://github.com/LitvinPavel/kids-paywall](https://github.com/LitvinPavel/kids-paywall)**
@@ -82,8 +82,12 @@ kids-paywall-nuxt/
 │   │   └── restore.post.ts          # POST /api/restore — проверка покупок по deviceId
 │   └── utils/
 │       └── db.ts                    # Универсальный клиент БД (LibSQL / SQLite)
+├── public/
+│   ├── favicon.svg                  # Векторный фавикон приложения (маскот игры)
+│   ├── favicon.ico                  # Классический ICO фавикон
+│   └── apple-touch-icon.png         # Иконка для мобильных устройств iOS / Android
 ├── figma/
-│   ├── paywall_design.svg           # Полный векторный макет экрана (390×844) для Figma
+│   ├── paywall_design.svg           # Полный векторный макет экрана (390×844)
 │   ├── design_tokens.json           # Токены дизайн-системы (цвета, шрифты, отступы)
 │   └── README_FIGMA.md              # Обоснование дизайн-решений и спецификация токенов
 ├── nuxt.config.ts                   # Конфигурация Nuxt 4, Tailwind и мета-тегов
@@ -98,7 +102,7 @@ kids-paywall-nuxt/
 - **Почему Turso/SQLite**:
   1. **Универсальность**: один и тот же клиент `@libsql/client` работает локально с файлом `file:paywall.db` без сетевых задержек, а в продакшне — с облачной распределенной базой через `DATABASE_URL` по протоколу HTTP/WebSockets.
   2. **Serverless-friendly**: в отличие от классического PostgreSQL с пулом соединений (Connection Pooling), LibSQL идеально подходит для edge/serverless-функций (Vercel, Netlify), не перегружая базу при скачках трафика.
-  3. **Легковесность**: простота схемы тестового задания (минимум `offerId`, `deviceId`, дата/время) не требует тяжелых ORM вроде Prisma, что обеспечивает мгновенный холодный старт (Cold Start < 50ms).
+  3. **Легковесность**: компактная схема (`offerId`, `deviceId`, цена, валюта, статус, дата/время) не требует тяжелых ORM вроде Prisma, что обеспечивает мгновенный холодный старт (Cold Start < 50ms).
 
 ### Платформа деплоя: Vercel / Netlify / Render
 - **Почему Vercel / Netlify**:

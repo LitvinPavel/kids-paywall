@@ -13,6 +13,7 @@ node_modules
 paywall.db
 paywall.db-journal
 *.log
+.npm/
 
 # OS files
 .DS_Store

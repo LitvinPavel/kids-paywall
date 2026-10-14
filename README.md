@@ -6,11 +6,13 @@
 
 ---
 
-## 🔗 Ссылки проекта
-- **GitHub-репозиторий:**  
-  👉 **[https://github.com/LitvinPavel/kids-paywall](https://github.com/LitvinPavel/kids-paywall)**
+## 🔗 Ссылки проекта (для сдачи тестового задания)
+- **Живой задеплоенный сервис:**  
+  👉 **[https://kids-paywall-eight.vercel.app/](https://kids-paywall-eight.vercel.app/)**
 - **Макет экрана в Figma (с правом просмотра):**  
   👉 **[https://www.figma.com/design/vjFFG5WTF8R3PHl8k7xkwQ/kids-paywall?node-id=0-1&m=dev&t=Mz6p5c1qzjJmAjN8-1](https://www.figma.com/design/vjFFG5WTF8R3PHl8k7xkwQ/kids-paywall?node-id=0-1&m=dev&t=Mz6p5c1qzjJmAjN8-1)**
+- **GitHub-репозиторий:**  
+  👉 **[https://github.com/LitvinPavel/kids-paywall](https://github.com/LitvinPavel/kids-paywall)**
 
 ---
 
